@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Feedback Form </title>
+</head>
+<body>
+<h2>Website Feedback Form</h2>
+
+<form action="#" method="post">
+
+  <!-- Personal Information -->
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="fullname">Full Name:</label><br>
+    <input 
+      type="text" 
+      id="fullname" 
+      name="fullname" 
+      placeholder="Enter your full name"
+      required
+      minlength="2"
+      maxlength="50"
+    ><br><br>
+    <label for="email">Email Address:</label><br>
+    <input 
+      type="email" 
+      id="email" 
+      name="email" 
+      placeholder="example@email.com"
+      required
+    >
+    <br><br>
+
+    <label for="password">Password:</label><br>
+    <input 
+      type="password" 
+      id="password" 
+      name="password"
+      placeholder="Enter your password"
+      required
+      minlength="8"
+    >
+  </fieldset>
+
+  <br>
+
+  <!-- Feedback Details -->
+  <fieldset>
+    <legend>Feedback Details</legend>
+
+    <label for="category">Feedback Category:</label><br>
+    <select id="category" name="category" required>
+      <option value="" disabled>Select a category</option>
+      <option value="bug">Bug Report</option>
+      <option value="feature" selected>Feature Request</option>
+      <option value="general">General Feedback</option>
+    </select>
+
+    <br><br>
+
+    <p>Preferred Contact Method:</p>
+    <label>
+      <input type="radio" name="contact" value="email" checked>
+      Email
+    </label><br>
+
+    <label>
+      <input type="radio" name="contact" value="phone">
+      Phone
+    </label>
+  </fieldset>
+
+  <br>
+
+  <!-- Interests -->
+  <fieldset>
+    <legend>Additional Features of Interest</legend>
+
+    <label>
+      <input type="checkbox" name="features" value="dark-mode" checked>
+      Dark Mode
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="features" value="notifications">
+      Notifications
+    </label><br>
+
+    <label>
+      <input type="checkbox" name="features" value="mobile-app">
+      Mobile App
+    </label>
+  </fieldset>
+
+  <br>
+
+  <!-- Comments -->
+  <fieldset>
+    <legend>Additional Comments</legend>
+
+    <label for="comments">Comments:</label><br>
+    <textarea 
+      id="comments" 
+      name="comments" 
+      rows="5" 
+      cols="40"
+      placeholder="Share your thoughts here..."
+      maxlength="300"
+    ></textarea>
+  </fieldset>
+
+  <br>
+
+  <!-- Submit -->
+  <button type="submit">Submit Feedback</button>
+
+</form>
+🎯  
+</body>
+</html>
