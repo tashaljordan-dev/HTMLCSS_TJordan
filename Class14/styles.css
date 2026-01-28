@@ -1,68 +1,90 @@
+/* --------------------
+   GLOBAL STYLES
+-------------------- */
+
 html {
-    background-color: lightblue;
-    color: rgb(0, 0, 0);
-    
+  background-color: lightblue;
+  color: #000;
 }
-/* Circle image */
-.circle-image {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
+
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: lightblue;
+  color: #000;
 }
-.fixed-footer {
-  position: fixed;        
-  bottom: 0;              
-  left: 0;
-  width: 100%;            
-  background-color: #9dc50b; 
-  color: #121111;            
+
+h1,
+h2 {
+  margin: 0;
+}
+
+/* --------------------
+   HERO SECTION
+-------------------- */
+
+.hero {
   display: flex;
-  justify-content: space-evenly; 
-  padding: 8px 0;
-  z-index: 1000;  
-  font-size: 14px;        
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: rgb(173, 212, 230);
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+  font-family: "Cedarville Cursive", cursive;
+  color: purple;
+  margin-top: 10px;
+}
+
+/* --------------------
+   PROFILE IMAGE
+-------------------- */
+
+.circle-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+/* --------------------
+   FIXED FOOTER
+-------------------- */
+
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #9dc50b;
+  color: #121111;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  z-index: 1000;
+  font-size: 14px;
 }
 
 .fixed-footer a {
-  color: #171616;          
-  text-decoration: none; 
+  color: #171616;
+  text-decoration: none;
   font-weight: 500;
 }
 
 .fixed-footer a:hover {
-  text-decoration: underline; 
-}
-
-.hero {
-  display: flex;            /* use flex layout */
-  flex-direction: column;   /* stack items vertically */
-  align-items: center;      /* center horizontally */
-  text-align: center;       /* center text */
-  padding: 50px 20px;       /* space around header */
-  background-color: lightblue; /* optional light background */
-}
-
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif
-    margin: 0; 
-    padding-bottom: 60px; 
-    color: black;
-    background-color: lightblue; 
-}
-
-.hero h1 {
-    margin: 0; 
-    font-size: 3em; 
-    font-weight: 700; 
-    font-family: 'Montserrat', sans-serif; 
-    text-shadow: 1px 1px 2px rgba (0,0,0,0.2); 
-}
-
-.hero h2 {
-    margin: 10px 0 0 0; 
-    font-size: 1.8em; 
-    font-weight: 400; 
-    font-family: 'Dancing Script', cursive;    ;
-    color: purple
+  text-decoration: underline;
 }
